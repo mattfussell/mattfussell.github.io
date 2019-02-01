@@ -1,0 +1,81 @@
+// functions
+@function valAdjust($multiplier) {
+  @return $multiplier * ($fSBase / 16);
+}
+
+@function calcRem($size) {
+  $remSize: $size / $fSBase;
+  @return $remSize;
+}
+
+@function calcSize($txtType) {
+  @if $txtType == 'h1' {
+    @return $h1Mult * $fSBase;
+  }
+  @if $txtType == 'h2' {
+    @return $h2Mult * $fSBase;
+  }
+  @if $txtType == 'h3' {
+    @return $h3Mult * $fSBase;
+  }
+  @if $txtType == 'h4' {
+    @return $h4Mult * $fSBase;
+  }
+  @if $txtType == 'h5' {
+    @return $h5Mult * $fSBase;
+  }
+  @if $txtType == 'h6' {
+    @return $h6Mult * $fSBase;
+  }
+  @if $txtType == 'p' {
+    @return $pMult * $fSBase;
+  }
+}
+
+@function calcMrg($txtType) {
+  @if $txtType == 'h1' {
+    @return $h1VMrg;
+  }
+  @if $txtType == 'h2' {
+    @return $h2VMrg;
+  }
+  @if $txtType == 'h3' {
+    @return $h3VMrg;
+  }
+  @if $txtType == 'h4' {
+    @return $h4VMrg;
+  }
+  @if $txtType == 'h5' {
+    @return $h5VMrg;
+  }
+  @if $txtType == 'h6' {
+    @return $h6VMrg;
+  }
+  @if $txtType == 'p' {
+    @return $pVMrg;
+  }
+}
+
+@function calcFW($txtType) {
+  @if $txtType == 'h1' {
+    @return 'bold';
+  }
+  @if $txtType == 'h2' {
+    @return 'bold';
+  }
+  @if $txtType == 'h3' {
+    @return 'bold';
+  }
+  @if $txtType == 'h4' {
+    @return 'bold';
+  }
+  @if $txtType == 'h5' {
+    @return 'bold';
+  }
+  @if $txtType == 'h6' {
+    @return 'bold';
+  }
+  @if $txtType == 'p' {
+    @return 'normal';
+  }
+}

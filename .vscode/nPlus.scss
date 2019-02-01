@@ -1,0 +1,362 @@
+// objectives: rems for text, ems for elements
+//             minimize effort to make global changes
+
+// imports
+@import ".vscode/nPlus-var.scss";
+@import ".vscode/nPlus-mix.scss";
+
+// styles
+:root {
+  font-size: #{$fSBase}px;
+}
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+}
+
+a {
+  background-color: transparent;
+  :link {
+    text-decoration: underline;
+    cursor: auto;
+  }
+  :visited {
+    text-decoration: underline;
+    cursor: auto;
+  }
+}
+
+abbr[title] {
+  border-bottom: none;
+  text-decoration: underline;
+  text-decoration: underline dotted;
+}
+
+address, article, aside, blockquote, body, details, dd, div, dl, dt, fieldset, figcaption, figure, footer, header, hr, html, iframe[seamless], legend, main, menu, nav, ol, section, ul {
+  display: block;
+}
+
+address, cite, dfn, em, i, var {
+  font-style: italic;
+}
+
+b, strong {
+  font-weight: bolder;
+}
+
+bdo {
+  unicode-bidi: bidi-override;
+}
+
+blockquote {
+  margin: #{$pMult}em #{$stdPdMult}em;
+}
+
+body {
+  margin: 0;
+  :focus {
+    outline: none;
+  }
+}
+
+button, input, optgroup, select, textarea {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: $lHeight;
+  margin: 0;
+}
+
+button, input {
+  overflow: visible;
+}
+
+button, select {
+  text-transform: none;
+}
+
+button, [type="button"], [type="reset"], [type="submit"], {
+  -webkit-appearance: button;
+  ::-moz-focus-inner {
+    border-style: none;
+    padding: 0;
+  }
+  :-moz-focusring {
+    outline: #{$stdBdSm}em dotted ButtonText;  
+  } 
+}
+
+caption {
+  display: table-caption;
+  text-align: center;
+}
+
+code, kbd, pre, samp {
+  font-family: monospace, monospace;
+  font-size: #{$pMult}rem;
+}
+
+colgroup {
+  display: table-column;
+}
+
+dd {
+  margin-left: #{$stdPdMult}em;
+}
+
+del, s, strike {
+  text-decoration: line-through;
+}
+
+dl {
+  margin: #{$pMult}em 0;
+}
+
+embed {
+  :focus {
+    outline: none;
+  }
+}
+
+fieldset {
+  margin-left: #{$stdBdMd}em;
+  margin-right: #{$stdBdMd}em;
+  padding-top: #{$stdPdTp}em;
+  padding-bottom: #{$stdPdBtm}em;
+  padding-left: #{$stdPdLR}em;
+  padding-right: #{$stdPdLR}em;
+  border: #{$stdBdMd}em groove;
+}
+
+form {
+  margin-top: 0em;
+}
+
+h1 {
+  @include fScope(h1);
+}
+
+h2 {
+  @include fScope(h2);
+}
+
+h3 {
+  @include fScope(h3);
+}
+
+h4 {
+  @include fScope(h4);
+}
+
+h5 {
+  @include fScope(h5);
+}
+
+h6 {
+  @include fScope(h6);
+}
+
+html {
+  line-height: $lHeight;              
+  -webkit-text-size-adjust: 100%;
+  :focus {
+    outline: none;
+  }
+}
+
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+  margin: #{$stdMgn1}em auto;
+  border-style: inset;
+  border-width: #{$stdBdSm}em;
+}
+
+img {
+  border-style: none;
+}
+
+ins, u {
+  text-decoration: underline;
+}
+
+label {
+  cursor: default;
+}
+
+legend {
+  border: none;
+  box-sizing: border-box;
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  padding: 0;
+  white-space: normal;
+}
+
+li {
+  display: list-item;
+}
+
+[hidden], link, param, script, style, template, title {
+  display: none;
+}
+
+map, output, q {
+  display: inline;
+}
+
+mark {
+  background-color: yellow;
+  color: black;
+}
+
+menu {
+  list-style-type: disc;
+  margin: #{$pMult}em 0;
+  padding-left: #{$stdPdMult}em;
+}
+
+object {
+  :focus {
+    outline: none;
+  }
+}
+
+ol {
+  list-style-type: decimal;
+  margin: #{$pMult}em 0;
+  padding-left: #{$stdPdMult}em;
+}
+
+p {
+  @include fScope(p);
+}
+
+pre {
+  white-space: pre;
+}
+
+progress {
+  vertical-align: baseline;
+}
+
+q {
+  ::before {
+    content: open-quote;
+  }
+  ::after {
+    content: close-quote;
+  }
+}
+
+rt {
+  line-height: $lHeight;
+}
+
+small {
+  font-size: 80%;
+}
+
+summary {
+  display: list-item;
+}
+
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -#{$stdBdLg}em;
+}
+
+sup {
+  top: -#{$stdMgn1}em;
+}
+
+table {
+  display: table;
+  border-collapse: separate;
+  border-spacing: #{$stdBdMd}em;
+  border-color: gray;
+}
+
+tbody {
+  display: table-row-group;
+  vertical-align: inherit;
+}
+
+td {
+  display: table-cell;
+  vertical-align: inherit;
+}
+
+textarea {
+  overflow: auto;
+}
+
+tfoot {
+  display: table-footer-group;
+  vertical-align: middle;
+  border-color: inherit;
+}
+
+th {
+  display: table-cell;
+  vertical-align: inherit;
+  font-weight: bold;
+  text-align: center;
+}
+
+thead {
+  display: table-header-group;
+  vertical-align: middle;
+  border-color: inherit;
+}
+
+tr {
+  display: table-row;
+  vertical-align: inherit;
+  border-color: inherit;
+}
+
+ul {
+  list-style-type: disc;
+  margin: #{$pMult}em 0;
+  padding-left: #{$stdPdMult}em;
+}
+
+[type="checkbox"], [type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+[type="number"] {
+  ::-webkit-inner-spin-button, ::-webkit-outer-spin-button {
+    height: auto;
+  }
+}
+
+[type="search"] {
+  -webkit-appearance: textfield;
+  outline-offset: -#{$stdBdMd}em;
+  ::-webkit-search-decoration {
+    -webkit-appearance: none;
+  }
+}
+
+// styles - clear unused elements - remove individual elements if used
+audio, base, bdi, canvas, menuitem, meta, meter, noscript, option, picture, rp, ruby, source, span, time, track, video, wbr {
+  @include nullStyles();
+}
+
+// credits
+// normalize.css v8.0.1 | MIT License | http://www.github.com/necolas/normalize.css
+// http://www.stubbornella.org/content/2013/07/01/easy-peasy-rem-conversion-with-sass/
+// https://www.w3schools.com/cssref/css_default_values.asp
+// https://stackoverflow.com/questions/15901030/reset-remove-css-styles-for-element-only

@@ -1,0 +1,83 @@
+// variables
+@import "nPlus-func.scss";
+
+// set base font size
+$fSBase: 16;
+
+// set multiplier for h1
+$h1Mult: valAdjust(2);
+
+// set multiplier for h2             
+$h2Mult: valAdjust(1.5);            
+
+// set multiplier for h3
+$h3Mult: valAdjust(1 + (1 / 6));  
+
+// set multiplier for h4
+$h4Mult: valAdjust(1);              
+
+// set multiplier for h5
+$h5Mult: valAdjust(5 / 6);        
+
+// set multiplier for h6
+$h6Mult: valAdjust(2 / 3);        
+
+// set multiplier for p
+$pMult: valAdjust(1);               
+
+// set multiplier for h1 vertical margin
+$h1VMrg: valAdjust(2 / 3);        
+
+// set multiplier for h2 vertical margin
+$h2VMrg: valAdjust(5 / 6);        
+
+// set multiplier for h3 vertical margin
+$h3VMrg: valAdjust(1);              
+
+// set multiplier for h4 vertical margin
+$h4VMrg: (1 + (1 / 3));  
+
+// set multiplier for h5 vertical margin
+$h5VMrg: (1 + (2 / 3));  
+
+// set multiplier for h6 vertical margin
+$h6VMrg: valAdjust(2 + (1 / 3));  
+
+// set multiplier for p vertical margin
+$pVMrg: valAdjust(1);
+
+// set default line height
+$lHeight: valAdjust(1.15);          
+
+// set multiplier for standard left pad on elements
+// such as lists; ~40px if base font size is 16px
+$stdPdMult: valAdjust(2.5);
+
+// set multiplier for left and right padding on elements
+// such as fieldset ~.75em if base font size is 16px.
+$stdPdLR: valAdjust(3 / 4);       
+
+// set multiplier for top padding on elements such as 
+// fieldset; ~ .35em if base font size 16px
+$stdPdTp: (valAdjust(7) / valAdjust(20));
+
+// set multiplier for bottom padding on elements such 
+// as fieldset; ~.625em if base font size is 16
+$stdPdBtm: valAdjust(5 / 8);
+
+// set multiplier on elements like sub
+// ~.25em when base font size is 16px
+$stdBdLg: valAdjust(1 / 4);
+
+// set multiplier on elements like fieldset or
+// border-spacing on table; ~2px when base font size is
+// 16px
+$stdBdMd: valAdjust(1 / 8);
+
+// set multiplier on elements like -moz-focusring; 
+//~1px when base font size is 16px
+$stdBdSm: valAdjust(1 / 16);
+
+// set multiplier on elements like margins on
+// the hr element; ~.5em when base font size is 16px
+$stdMgn1: valAdjust(1 / 2);

@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat");
-@import url("https://fonts.googleapis.com/css?family=Roboto");
 :root {
   font-size: 16px;
 }
@@ -561,22 +559,4 @@ audio, base, bdi, canvas, menuitem, meta, meter, noscript, option, picture, rp, 
   all: initial;
   all: unset;
 }
-
-body {
-  background-image: url("img/bg.jpg");
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-}
-
-body h1, body h2, body h3, body h4, body h5, body h6 {
-  font-family: "Montserrat", arial, sans-serif;
-  color: #ddd;
-}
-
-body p, body a, body li {
-  font-family: "Roboto", arial, sans-serif;
-  color: #ddd;
-}
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=nPlus.css.map */

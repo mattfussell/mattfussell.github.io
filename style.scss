@@ -1,0 +1,31 @@
+// imports
+@import ".vscode/nPlus.scss";
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+// variables
+$w1-color: #ddd;
+$b1-color: #333;
+$fontOne: "Montserrat", arial, sans-serif;
+$fontTwo: "Roboto", arial, sans-serif;
+
+
+body {
+  // set background
+  background-image: url("img/bg.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+
+  // set general fonts and colors
+  h1, h2, h3, h4, h5, h6 {
+    font-family: $fontOne;
+    color: $w1-color;
+  }
+
+  p, a, li {
+    font-family: $fontTwo;
+    color: $w1-color;
+  }
+}
