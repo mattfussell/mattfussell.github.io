@@ -1,10 +1,10 @@
 // trigger JS availability after the page loads
 document.addEventListener('DOMContentLoaded', pageCore);
 
-// click or tap triggers
-document.addEventListener('click', handleClick);
-
 function pageCore() {
+  // click or tap triggers
+  document.addEventListener('click', handleClick);
+
   // get current year
   const currentYear = new Date().getFullYear();
 
@@ -13,32 +13,42 @@ function pageCore() {
 }
 
 function handleClick(event) {
+  // if JS is supported, pull content via AJAX
+  // if not, pass as normal
   event.preventDefault();
+  // get the target of the event
   const target = event.target;
+  // get the section to be swapped out
+  const dataTarget = document.getElementById('ajaxTarget');
+
+
   if (target.className === 'nav') {
-    console.log(target.href);
+    let targetURL = target.getAttribute('href');
+    ajaxSwap(targetURL, dataTarget);
   };
 }
 
-function myLoad(url, sourceContainer, targetContainer, replace) {
-  var xhr = new XMLHttpRequest();
+function ajaxSwap(url, localTarget) {
+  let xhr = new XMLHttpRequest();
   xhr.onerror = function() {
-    throw "Request failed. HTTP code " + xhr.status;
+    throw "Request failed -  HTTP code: " + xhr.status;
   };
   xhr.onload = function() {
     if (!xhr.status || (xhr.status >= 400)) {
-      throw "Request failed. HTTP code " + xhr.status;
+      throw "Request failed - HTTP code: " + xhr.status;
     }
-    var temp = document.createElement("DIV");
-    temp.innerHTML = xhr.responseText;
-    var ele = temp.querySelector(sourceContainer);
-    if (ele) {
-      if (replace) {
-        targetContainer.innerHTML = ele.outerHTML;
-      } else {
-        targetContainer.appendChild(ele);
-      }
-    }
+      // capture reply, convert to searchable document      
+      let parseHTML = new DOMParser();
+      let remoteSource = parseHTML.parseFromString(xhr.responseText, 'text/html');
+      // get the remote section to be swapped in
+      let remoteTarget = remoteSource.getElementById('ajaxTarget');
+
+      // capture the parent container
+      let targetContainer = localTarget.parentNode;
+      // remove the child element
+      localTarget.parentNode.removeChild(localTarget);
+      // append the new child element
+      targetContainer.appendChild(remoteTarget);
   };
   xhr.open("GET", url, true);
   xhr.send();
