@@ -610,7 +610,7 @@ body nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  max-height: 40vh;
+  max-height: 50vh;
   overflow: hidden;
   -webkit-transition: max-height 0.4s;
   transition: max-height 0.4s;
