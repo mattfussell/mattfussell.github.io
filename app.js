@@ -23,18 +23,17 @@ function pageCore() {
 }
 
 function handleClick(event) {
-  // if JS is supported, pull content via AJAX
-  // if not, pass as normal
-  event.preventDefault();
-  // get the target of the event
-  const target = event.target;
-  // get the section to be swapped out
-  const dataTarget = document.getElementById('ajaxTarget');
-
-
   if (target.className === 'nav') {
     // close the nav menu
     document.querySelector('nav ul').classList.toggle('collapsed');
+
+    // if JS is supported, pull content via AJAX
+    // if not, pass as normal
+    event.preventDefault();
+    // get the target of the event
+    const target = event.target;
+    // get the section to be swapped out
+    const dataTarget = document.getElementById('ajaxTarget');
 
     // retrieve the target page and get it's contents
     let targetURL = target.getAttribute('href');
