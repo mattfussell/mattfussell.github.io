@@ -2,12 +2,22 @@
 document.addEventListener('DOMContentLoaded', pageCore);
 
 function pageCore() {
+  // nav controls
+  let navArea = document.querySelector('nav ul');
+  let navControl = document.getElementById('navToggle');
+  // hide the nav items on page load
+
+  function toggleNav() {
+    navArea.classList.toggle('collapsed');
+  }
+
+
   // click or tap triggers
   document.addEventListener('click', handleClick);
+  navControl.addEventListener('click', toggleNav);
 
   // get current year
   const currentYear = new Date().getFullYear();
-
   // set the current year
   document.getElementById('thisYear').innerHTML = currentYear;
 }
@@ -23,6 +33,10 @@ function handleClick(event) {
 
 
   if (target.className === 'nav') {
+    // close the nav menu
+    document.querySelector('nav ul').classList.toggle('collapsed');
+
+    // retrieve the target page and get it's contents
     let targetURL = target.getAttribute('href');
     ajaxSwap(targetURL, dataTarget);
   };

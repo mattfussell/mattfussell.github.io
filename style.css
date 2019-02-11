@@ -568,15 +568,97 @@ body {
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: scroll;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
 }
 
 body h1, body h2, body h3, body h4, body h5, body h6 {
   font-family: "Montserrat", arial, sans-serif;
-  color: #ddd;
+  color: #fff;
 }
 
 body p, body a, body li {
   font-family: "Roboto", arial, sans-serif;
   color: #ddd;
+}
+
+body nav {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #333;
+}
+
+body nav #navToggle {
+  padding: 1em;
+  margin: 0;
+  font-family: "Montserrat", arial, sans-serif;
+  font-size: .75em;
+  color: #ddd;
+  background-color: #555;
+  border: none;
+}
+
+body nav #navToggle:hover {
+  background-color: #777;
+}
+
+body nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  max-height: 40vh;
+  overflow: hidden;
+  -webkit-transition: max-height 0.4s;
+  transition: max-height 0.4s;
+}
+
+body nav ul li a {
+  text-decoration: none;
+  display: block;
+  padding: .5em;
+  color: #ddd;
+  background: #555;
+  max-height: inherit;
+}
+
+body nav ul li a:hover {
+  background: #777;
+}
+
+body header {
+  margin: 2em 0 0 0;
+  text-align: center;
+  padding: 0 1em;
+}
+
+body main section {
+  margin: 0;
+  padding: 0 1em;
+  text-align: center;
+}
+
+body main section p a {
+  text-decoration: none;
+}
+
+body main section p a:hover {
+  color: #fff;
+}
+
+body main noscript {
+  margin: 0;
+  padding: 0 1em;
+}
+
+body footer {
+  text-align: center;
+}
+
+.collapsed {
+  max-height: 0;
 }
 /*# sourceMappingURL=style.css.map */

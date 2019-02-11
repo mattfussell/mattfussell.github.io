@@ -4,8 +4,11 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
 // variables
+$w0-color: #fff;
 $w1-color: #ddd;
 $b1-color: #333;
+$b2-color: #555;
+$b3-color: #777;
 $fontOne: "Montserrat", arial, sans-serif;
 $fontTwo: "Roboto", arial, sans-serif;
 
@@ -21,11 +24,97 @@ body {
   // set general fonts and colors
   h1, h2, h3, h4, h5, h6 {
     font-family: $fontOne;
-    color: $w1-color;
+    color: $w0-color;
   }
 
   p, a, li {
     font-family: $fontTwo;
     color: $w1-color;
   }
+
+  // grid styling
+  display: grid;
+  grid-template-columns: 1fr;
+
+  // nav styling
+  nav {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: $b1-color;
+
+    #navToggle {
+      padding: 1em;
+      margin: 0;
+      font-family: $fontOne;
+      font-size: .75em;
+      color: $w1-color;
+      background-color: $b2-color;
+      border: none;
+    }
+    #navToggle:hover {
+      background-color: $b3-color;
+    }
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      max-height: 40vh;
+      overflow: hidden;
+      transition: max-height 0.4s;
+
+      li {
+        a {
+          text-decoration: none;
+          display: block;
+          padding: .5em;
+          color: $w1-color;
+          background: $b2-color;
+          max-height: inherit;
+        }
+        a:hover {
+          background: $b3-color;
+        }
+      }
+    }
+  }
+
+  header {
+    margin: 2em 0 0 0;
+    text-align: center;
+    padding: 0 1em;
+  }
+
+  main {
+    section {
+      margin: 0;
+      padding: 0 1em;
+      text-align: center;
+
+      p {
+        a {
+          text-decoration: none;
+        }
+        a:hover {
+          color: $w0-color;
+        }
+      }
+    }
+    
+    noscript {
+      margin: 0;
+      padding: 0 1em;
+    }
+  }
+
+  footer {
+    text-align: center;
+  }
+}
+
+// functionality classes
+.collapsed {
+  max-height: 0;
 }
