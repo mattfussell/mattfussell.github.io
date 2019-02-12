@@ -13,7 +13,7 @@ function pageCore() {
 
 
   // click or tap triggers
-  document.addEventListener('click', handleClick);
+  document.addEventListener('click', handleClick(event));
   navControl.addEventListener('click', toggleNav);
 
   // get current year
