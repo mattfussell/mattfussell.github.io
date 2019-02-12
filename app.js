@@ -13,7 +13,7 @@ function pageCore() {
 
 
   // click or tap triggers
-  document.addEventListener('click', handleClick(event));
+  document.addEventListener('click', handleClick);
   navControl.addEventListener('click', toggleNav);
 
   // get current year
@@ -23,6 +23,9 @@ function pageCore() {
 }
 
 function handleClick(event) {
+  // get the target of the event
+  const target = event.target;
+  
   if (target.className === 'nav') {
     // close the nav menu
     document.querySelector('nav ul').classList.toggle('collapsed');
@@ -30,8 +33,7 @@ function handleClick(event) {
     // if JS is supported, pull content via AJAX
     // if not, pass as normal
     event.preventDefault();
-    // get the target of the event
-    const target = event.target;
+    
     // get the section to be swapped out
     const dataTarget = document.getElementById('ajaxTarget');
 
