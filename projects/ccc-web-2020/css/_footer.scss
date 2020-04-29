@@ -1,0 +1,115 @@
+footer {
+  display: grid;
+  grid-template-columns: 1fr;
+  color: $c-light;
+
+  #info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 auto;
+    background: $c-medBlue;
+    height: 100%;
+    width: 100%;
+
+    .serviceInfo {
+      text-align: center;
+
+      h3 {
+        font-family: $f-lead;
+      }
+      p {
+        font-family: $f-page;
+      }
+    }
+
+    .social {
+      text-align: center;
+      h3 {
+        font-family: $f-lead;
+      }
+      p {
+        font-family: $f-page;
+
+        a {
+          color: inherit;
+          text-decoration: none;
+
+          &:visited {
+            color: inherit;
+          }
+
+          &:hover {
+            color: $c-lightTeal;
+          }
+
+          &:focus {
+            outline: none;
+          }
+        } // end <a>
+
+      }
+    }
+
+    .location {
+      text-align: center;
+      h3 {
+        font-family: $f-lead;
+      }
+      p {
+        font-family: $f-page;
+
+        a {
+          color: inherit;
+          text-decoration: none;
+
+          &:visited {
+            color: inherit;
+          }
+
+          &:hover {
+            color: $c-lightTeal;
+          }
+
+          &:focus {
+            outline: none;
+          }
+        } // end <a>
+      }
+
+      address {
+        font-style: normal;
+      }
+    }
+  } // end #info
+
+  #copy {
+    text-align: center;
+    margin: 0 auto;
+    padding: 1rem;
+    font-family: $f-page;
+    background: $c-darkBlue;
+    height: 100%;
+    width: 100%;
+
+    p {
+
+      a {
+        color: inherit;
+        text-decoration: none;
+
+        &:visited {
+          color: inherit;
+        }
+
+        &:hover {
+          color: $c-lightTeal;
+        }
+
+        &:focus {
+          outline: none;
+        }
+      } // end <a>
+    }
+  }
+
+} // end footer

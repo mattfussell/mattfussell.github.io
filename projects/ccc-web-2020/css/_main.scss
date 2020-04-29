@@ -1,0 +1,54 @@
+#main {
+  height: 110vh;
+  background: $c-light;
+  color: $c-dark;
+  font-family: $f-page;
+  padding: 3rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+
+  h2 {
+    font-size: 3rem;
+  }
+
+  .btnContainer-m {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 2rem;
+    margin: 2rem auto;
+    align-content: center;
+    height: 30vh;
+  
+    .btn {
+      height: 115px;
+      width: 115px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: $c-lightTeal;
+    }
+    a {
+      color: $c-white;
+      text-decoration: none;
+      font-family: $f-page;
+      font-size: 1.5rem;
+      text-align: center;
+
+      &:visited {
+        color: $c-white;
+      }
+
+      &:active {
+        color: $c-medYellow;
+        background: $c-darkTeal;
+      }
+
+      &:focus {
+        outline: none;
+      }
+    }
+  } // end .btnContainer
+}

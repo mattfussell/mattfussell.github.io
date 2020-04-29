@@ -1,0 +1,48 @@
+{
+  "events" : [
+    {
+      "id" : 1,
+      "priority" : 1,
+      "event-date" : "2021-01-01",
+      "event-title" : "Test Event",
+      "event-brief" : "This is the short event description.",
+      "event-image" : "This is the location of the event image",
+      "event-long" : "This is the long promo text associated with the event.",
+      "event-cal" : "This is the calendar link for the event.",
+      "event-fb" : "This is the facebook link for the event."
+    },
+    {
+      "id" : 2,
+      "priority" : 1,
+      "event-date" : "2021-01-02",
+      "event-title" : "Test Event 2",
+      "event-brief" : "This is the short event description.",
+      "event-image" : "This is the location of the event image",
+      "event-long" : "This is the long promo text associated with the event.",
+      "event-cal" : "This is the calendar link for the event.",
+      "event-fb" : "This is the facebook link for the event."
+    },
+      {
+      "id" : 3,
+      "priority" : 1,
+      "event-date" : "2021-01-02",
+      "event-title" : "Test Event 3",
+      "event-brief" : "This is the short event description.",
+      "event-image" : "This is the location of the event image",
+      "event-long" : "This is the long promo text associated with the event.",
+      "event-cal" : "This is the calendar link for the event.",
+      "event-fb" : "This is the facebook link for the event."
+    },
+      {
+      "id" : 4,
+      "priority" : 1,
+      "event-date" : "2021-01-01",
+      "event-title" : "Test Event 4",
+      "event-brief" : "This is the short event description.",
+      "event-image" : "This is the location of the event image",
+      "event-long" : "This is the long promo text associated with the event.",
+      "event-cal" : "This is the calendar link for the event.",
+      "event-fb" : "This is the facebook link for the event."
+    } 
+  ]
+}

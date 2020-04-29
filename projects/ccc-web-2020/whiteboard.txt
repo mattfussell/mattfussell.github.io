@@ -1,0 +1,33 @@
+
+
+
+
+// JSONbin.io
+
+// turned out to not be completely worthless - connection was good, but editing required a
+// complete pass of all the data; it wasn't going to save any time by NOT doing it locally
+
+// {
+//   const eventList = 'https://api.jsonbin.io/b/5ea6c0ec2940c704e1df6c46',
+//       eventListKey = '$2b$10$.J.FheXD98lT/.oksiHHXeCbYdgTOuMV4YcOsm3zExT8sk9RGoeBe'
+
+// //event list retrieval
+// const getEvents = async function() {
+//   const response = await fetch(eventList, {
+//     method: 'GET',
+//     headers: {
+//       'secret-key' : eventListKey
+//     }
+//   })
+//   //console.log(response)
+//   eventJSON = await response.json()
+//   //console.log(eventJSON)
+//   eventJSON.events.forEach((event) => {
+//     console.log(event)
+//   })
+// }
+
+// getEvents()
+// // .then(eventJSON.events.forEach((event) => {console.log(event)})
+// // })
+// }

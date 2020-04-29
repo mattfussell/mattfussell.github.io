@@ -1,0 +1,92 @@
+header {
+  height: 100vh;
+
+  &::before {
+    content: "";
+    display: block;
+    // background: url("https://source.unsplash.com/J-Jb1niw1j0/1920x1080") no-repeat center center/cover;
+    background: url("../img/church-park-landing-bw-l.jpg") no-repeat center center/cover;
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    opacity: .4;
+    z-index: -1;
+    background-attachment: fixed;
+  }
+
+  .content {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 4rem;
+
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+      color: $c-white;
+      font-family: $f-lead;
+      text-align: center;
+      height: 50vh;
+
+      .logoImg {
+        height: 250px;
+        width: auto;
+        margin: 1rem auto;
+      }
+    
+      h1 {
+        font-size: 9rem;
+      }
+
+      h2 {
+        letter-spacing: .2rem
+      }
+    
+    } // end .container
+
+
+    .btnContainer-h {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      grid-gap: 2rem;
+      margin: 2rem auto;
+      align-content: center;
+      height: 30vh;
+    
+      .btn {
+        height: 150px;
+        width: 150px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: $c-lightTeal;
+      }
+      a {
+        color: $c-white;
+        text-decoration: none;
+        font-family: $f-page;
+        font-size: 1.5rem;
+
+        &:visited {
+          color: $c-white;
+        }
+
+        &:active {
+          color: $c-medYellow;
+          background: $c-darkTeal;
+        }
+
+        &:focus {
+          outline: none;
+        }
+      }
+    } // end .btnContainer
+  } // end .content
+}
+
+// unsplash image for demonstration
+// found @ https://unsplash.com/photos/J-Jb1niw1j0
+// https://source.unsplash.com/J-Jb1niw1j0/1920x1080

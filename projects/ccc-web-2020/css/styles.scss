@@ -1,0 +1,32 @@
+// import internal
+@import "_vars.scss";
+@import "_nav.scss";
+@import "_header.scss";
+@import "_main.scss";
+@import "_footer.scss";
+
+// global styling rules
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0; 
+}
+
+html {
+   scroll-behavior: smooth;
+}
+
+body {
+   background: $c-darkBlue;
+}
+
+h1, h2, h3, h4, h5, h6 {
+   font-weight: lighter;
+}
+
+.hidden {
+   display: none !important;
+}
+
+// future reference:
+// https://css-tricks.com/snippets/jquery/smooth-scrolling/

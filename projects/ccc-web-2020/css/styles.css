@@ -1,0 +1,401 @@
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+nav {
+  height: 10vh;
+  width: 100%;
+  background: rgba(4, 86, 98, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+nav .content {
+  font-family: "Righteous", cursive;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100%;
+  width: 100%;
+}
+
+nav .content .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2rem;
+}
+
+nav .content .container .logo {
+  background: #013660;
+  padding: .5rem;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 1px solid #fdfdfd;
+}
+
+nav .content .container .logo .logoImg {
+  height: 45px;
+  width: auto;
+}
+
+nav .content .navLinks {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: .5rem 2rem;
+}
+
+nav .content .navLinks li a {
+  text-decoration: none;
+  color: #fdfdfd;
+  width: 100%;
+  padding: .5rem 1rem;
+  font-family: inherit;
+  font-size: 2rem;
+}
+
+header {
+  height: 100vh;
+}
+
+header::before {
+  content: "";
+  display: block;
+  background: url("../img/church-park-landing-bw-l.jpg") no-repeat center center/cover;
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  opacity: .4;
+  z-index: -1;
+  background-attachment: fixed;
+}
+
+header .content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  padding: 4rem;
+}
+
+header .content .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  color: #fdfdfd;
+  font-family: "Righteous", cursive;
+  text-align: center;
+  height: 50vh;
+}
+
+header .content .container .logoImg {
+  height: 250px;
+  width: auto;
+  margin: 1rem auto;
+}
+
+header .content .container h1 {
+  font-size: 9rem;
+}
+
+header .content .container h2 {
+  letter-spacing: .2rem;
+}
+
+header .content .btnContainer-h {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[6];
+      grid-template-columns: repeat(6, 1fr);
+  grid-gap: 2rem;
+  margin: 2rem auto;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  height: 30vh;
+}
+
+header .content .btnContainer-h .btn {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #01a79d;
+}
+
+header .content .btnContainer-h a {
+  color: #fdfdfd;
+  text-decoration: none;
+  font-family: "Lato", sans-serif;
+  font-size: 1.5rem;
+}
+
+header .content .btnContainer-h a:visited {
+  color: #fdfdfd;
+}
+
+header .content .btnContainer-h a:active {
+  color: #d39e12;
+  background: #045662;
+}
+
+header .content .btnContainer-h a:focus {
+  outline: none;
+}
+
+#main {
+  height: 110vh;
+  background: #f4f4f4;
+  color: #333333;
+  font-family: "Lato", sans-serif;
+  padding: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#main h2 {
+  font-size: 3rem;
+}
+
+#main .btnContainer-m {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[6];
+      grid-template-columns: repeat(6, 1fr);
+  grid-gap: 2rem;
+  margin: 2rem auto;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  height: 30vh;
+}
+
+#main .btnContainer-m .btn {
+  height: 115px;
+  width: 115px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #01a79d;
+}
+
+#main .btnContainer-m a {
+  color: #fdfdfd;
+  text-decoration: none;
+  font-family: "Lato", sans-serif;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+#main .btnContainer-m a:visited {
+  color: #fdfdfd;
+}
+
+#main .btnContainer-m a:active {
+  color: #d39e12;
+  background: #045662;
+}
+
+#main .btnContainer-m a:focus {
+  outline: none;
+}
+
+footer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  color: #f4f4f4;
+}
+
+footer #info {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  margin: 0 auto;
+  background: #013660;
+  height: 100%;
+  width: 100%;
+}
+
+footer #info .serviceInfo {
+  text-align: center;
+}
+
+footer #info .serviceInfo h3 {
+  font-family: "Righteous", cursive;
+}
+
+footer #info .serviceInfo p {
+  font-family: "Lato", sans-serif;
+}
+
+footer #info .social {
+  text-align: center;
+}
+
+footer #info .social h3 {
+  font-family: "Righteous", cursive;
+}
+
+footer #info .social p {
+  font-family: "Lato", sans-serif;
+}
+
+footer #info .social p a {
+  color: inherit;
+  text-decoration: none;
+}
+
+footer #info .social p a:visited {
+  color: inherit;
+}
+
+footer #info .social p a:hover {
+  color: #01a79d;
+}
+
+footer #info .social p a:focus {
+  outline: none;
+}
+
+footer #info .location {
+  text-align: center;
+}
+
+footer #info .location h3 {
+  font-family: "Righteous", cursive;
+}
+
+footer #info .location p {
+  font-family: "Lato", sans-serif;
+}
+
+footer #info .location p a {
+  color: inherit;
+  text-decoration: none;
+}
+
+footer #info .location p a:visited {
+  color: inherit;
+}
+
+footer #info .location p a:hover {
+  color: #01a79d;
+}
+
+footer #info .location p a:focus {
+  outline: none;
+}
+
+footer #info .location address {
+  font-style: normal;
+}
+
+footer #copy {
+  text-align: center;
+  margin: 0 auto;
+  padding: 1rem;
+  font-family: "Lato", sans-serif;
+  background: #082243;
+  height: 100%;
+  width: 100%;
+}
+
+footer #copy p a {
+  color: inherit;
+  text-decoration: none;
+}
+
+footer #copy p a:visited {
+  color: inherit;
+}
+
+footer #copy p a:hover {
+  color: #01a79d;
+}
+
+footer #copy p a:focus {
+  outline: none;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #082243;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: lighter;
+}
+
+.hidden {
+  display: none !important;
+}
+/*# sourceMappingURL=styles.css.map */
