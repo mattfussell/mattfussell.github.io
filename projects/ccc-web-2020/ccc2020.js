@@ -1,5 +1,5 @@
 // vars
-const eventList = '/json/events.json',
+const eventList = 'json/events.json',
       mensBreak = 'stubs/mens-breakfast.html'
 
 /* ui */
