@@ -57,12 +57,12 @@ const btnActionHandler = function(e) {
 // retrieve and populate the event list
 const populateEvents = async function() {
   const response = await fetch(eventList)
-  // console.log(response)
+  //console.log(response)
   eventJSON = await response.json()
-  // console.log(eventJSON)
-  eventJSON.events.forEach((event) => {
-    console.log(event)
-  })
+  console.log(eventJSON)
+  // eventJSON.events.forEach((event) => {
+  //   console.log(event)
+  // })
 }
 
 // load men's breakfast
